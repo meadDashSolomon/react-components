@@ -10,7 +10,7 @@ const GroceryListItem = (props) => {
   };
 
   return (
-    <li style={style} onClick={() => setIsHovered(!isHovered)}>
+    <li style={style} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
       {props.item}
     </li>
   );
